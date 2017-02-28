@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Тихонов](https://up.htmlacademy.ru/adaptive/10/user/206328).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Собакарь](https://htmlacademy.ru/profile/id128451)
 
 ---
 
