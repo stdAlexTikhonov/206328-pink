@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-title">Pink</h1>
+      <nav class="main-menu main-menu--closed">
+        <div class="main-menu__toggle">Открыть меню</div>
+        <div class="main-menu__wrapper">
+          <ul class="main-menu__items">
+            <li class="main-menu__item"><a href="#">Главная</a></li>
+            <li class="main-menu__item"><a href="#">Фотографии</a></li>
+            <li class="main-menu__item"><a href="#">Конкурс</a></li>
+            <li class="main-menu__item"><a href="#">htmlacademy</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <div class="page-header__bottom">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+      </div>
+    </header>
+    <main>
+      <form action="" method="post">
+        <fieldset class="nameinfo">
+          <label class="nameinfo__item">
+            ФАМИЛИЯ:
+            <input type="text" value="Укажите фамилию *" name="lastname">
+          </label>
+          <label class="nameinfo__item">
+            ИМЯ:
+            <input type="text" value="Введите ваше имя *" name="firstname">
+          </label>
+          <label class="nameinfo__item">
+            ОТЧЕСТВО:
+            <input type="text" value="Ну и отчество тоже *" name="secondname">
+          </label>
+        </fieldset>
+
+        <fieldset class="checklist">
+          <p>Ваши безбашенные достижения в путешествии</p>
+          <label class="checklist__item"><input type="checkbox" name="check1" checked>Сделал селфи с акулой</label>
+          <label class="checklist__item"><input type="checkbox" name="check2" checked>Обгорел на пляже</label>
+          <label class="checklist__item"><input type="checkbox" name="check3">Видел Чака Норриса</label>
+          <label class="checklist__item"><input type="checkbox" name="check4">Накупил сувениров</label>
+          <label class="checklist__item"><input type="checkbox" name="check5" checked>Удержал башню</label>
+          <label class="checklist__item"><input type="checkbox" name="check6">Разгромил отель</label>
+        </fieldset>
+
+        <fieldset class="contacts">
+          <label class="contacts__item">
+            НОМЕР ТЕЛЕФОНА
+            <input type="tel" name="phone-number"  placeholder="Номер, пожалуйста">
+          </label>
+
+          <label class="contacts__item">
+            АДРЕС ПОЧТЫ
+            <input type="email" name="email" placeholder="Введите почту *">
+          </label>
+        </fieldset>
+
+        <fieldset class="apps">
+          <p class="apps__title">C каким приложением путешествовали</p>
+          <label class="apps__item"><input type="radio" name="app" value="ios" checked>Pink для IOS</label>
+          <label class="apps__item"><input type="radio" name="app" value="ios">Pink для Android</label>
+          <label class="apps__item"><input type="radio" name="app" value="ios">Windows Phone</label>
+        </fieldset>
+
+        <label class="comment">
+          ОПИШИТЕ СВОИ ЭМОЦИИ
+          <textarea name="comment" id="comment-field" rows=10>Можно прям в красках, не стесняясь в выражениях</textarea>
+        </label>
+
+        <input type="submit" value="Отправить форму">
+        <p>- обязательные поля</p>
+
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <span class="logo"></span><span class="logo__text">PINK</span>
+      </div>
+      <ul class="page-footer__socials socials">
+        <li class="socials__item"><a class="socials__link--tw" href="#">Twitter</a></li>
+        <li class="socials__item"><a class="socials__link--fb" href="#">Facebook</a></li>
+        <li class="socials__item"><a class="socials__link--yt" href="#">Youtube</a></li>
+      </ul>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn page-footer__copyright" href="#">htmlacademy</a>
+      </p>
+    </footer>
+
+    <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p> -->
+
+  </body>
+</html>

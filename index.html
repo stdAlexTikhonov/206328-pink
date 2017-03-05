@@ -5,8 +5,97 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+      <h1 class="page-title">Pink</h1>
+      <nav class="main-menu main-menu--closed">
+        <div class="main-menu__toggle">Открыть меню</div>
+        <div class="main-menu__wrapper">
+          <ul class="main-menu__items">
+            <li class="main-menu__item"><a href="#">Главная</a></li>
+            <li class="main-menu__item"><a href="#">Фотографии</a></li>
+            <li class="main-menu__item"><a href="#">Конкурс</a></li>
+            <li class="main-menu__item"><a href="#">htmlacademy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <img class="page-banner" src=""/>
+      <div class="btn--download">Скачать приложение</div>
+      <ul class="apps-links">
+        <li class="app-link app-link--apple"><a href=""></a></li>
+        <li class="app-link app-link--android"><a href=""></a></li>
+        <li class="app-link app-link--windows"><a href=""></a></li>
+      </ul>
+      <p>Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</p>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__titles">
+          <h2 class="intro__title1">Устали от серости мегаполиса?</h2>
+          <h2 class="intro__title2">Нам есть, что вам предложить!</h2>
+        </div>
+        <ul class="intro__suggestions">
+          <li class="intro__item suggestion">
+            <h3 class="suggestion__title">Поднимает настроение</h3>
+            <p class="suggestion__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="intro__item suggestion">
+            <h3 class="suggestion__title">Меняет мир вокруг</h3>
+            <p class="suggestion__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="intro__item suggestion">
+            <h3 class="suggestion__title">Заводит новых друзей</h3>
+            <p class="suggestion__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <ul class="reviews__items">
+            <li class="reviews__item slider__item">
+              <h2 class='reviews__author'>Николай Петров</h2>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+          <input type="radio" class="slider_input" id="reviews-input-1">
+          <input type="radio" class="slider_input" id="reviews-input-2" checked>
+          <input type="radio" class="slider_input" id="reviews-input-3">
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper slider">
+          <ul class="advantages__items">
+            <li class="advantages__item slider__item">
+              <img src="">
+            </li>
+          </ul>
+          <input type="radio" class="slider_input" id="advantages-input-1">
+          <input type="radio" class="slider_input" id="advantages-input-2" checked>
+          <input type="radio" class="slider_input" id="advantages-input-3">
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <h3 class="page-footer__title">Остались вопросы?<br>Свяжитесь с нами</h3>
+        <ul class="page-footer__items contacts">
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Звоните:</h3>
+            <a class="contacts__item-phone"href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Пишите:</h3>
+            <p class="contacts__item-mail">mail@htmlacademy.ru</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Приезжайте в гости:</h3>
+            <p class="contacts__item-addr">ул. Большая<br>Конюшенная, 19/8</p>
+          </li>
+        </ul>
+        <div class="map"></div>
+      </div>
+    </footer>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p> -->
 
   </body>
 </html>
