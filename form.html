@@ -20,29 +20,30 @@
       </nav>
 
       <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      <div class="page-header__bottom">
+
+    </header>
+    <main class="main">
+      <div class="main__top">
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
       </div>
-    </header>
-    <main>
       <form action="" method="post">
         <fieldset class="nameinfo">
           <label class="nameinfo__item">
-            ФАМИЛИЯ:
+            фамилия:
             <input type="text" value="Укажите фамилию *" name="lastname">
           </label>
           <label class="nameinfo__item">
-            ИМЯ:
+            имя:
             <input type="text" value="Введите ваше имя *" name="firstname">
           </label>
           <label class="nameinfo__item">
-            ОТЧЕСТВО:
+            отчество:
             <input type="text" value="Ну и отчество тоже *" name="secondname">
           </label>
         </fieldset>
 
         <fieldset class="checklist">
-          <p>Ваши безбашенные достижения в путешествии</p>
+          <p class="checklist__title">Ваши безбашенные достижения в путешествии</p>
           <label class="checklist__item"><input type="checkbox" name="check1" checked>Сделал селфи с акулой</label>
           <label class="checklist__item"><input type="checkbox" name="check2" checked>Обгорел на пляже</label>
           <label class="checklist__item"><input type="checkbox" name="check3">Видел Чака Норриса</label>
@@ -53,12 +54,12 @@
 
         <fieldset class="contacts">
           <label class="contacts__item">
-            НОМЕР ТЕЛЕФОНА
+            номер телефона
             <input type="tel" name="phone-number"  placeholder="Номер, пожалуйста">
           </label>
 
           <label class="contacts__item">
-            АДРЕС ПОЧТЫ
+            адрес почты
             <input type="email" name="email" placeholder="Введите почту *">
           </label>
         </fieldset>
@@ -71,7 +72,7 @@
         </fieldset>
 
         <label class="comment">
-          ОПИШИТЕ СВОИ ЭМОЦИИ
+          опишите свои эмоции
           <textarea name="comment" id="comment-field" rows=10>Можно прям в красках, не стесняясь в выражениях</textarea>
         </label>
 
@@ -81,18 +82,20 @@
       </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <span class="logo"></span><span class="logo__text">PINK</span>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <span class="logo"></span><span class="logo__title">PINK</span>
+        </div>
+        <ul class="page-footer__socials socials">
+          <li class="socials__item"><a class="socials__link--tw" href="#">Twitter</a></li>
+          <li class="socials__item"><a class="socials__link--fb" href="#">Facebook</a></li>
+          <li class="socials__item"><a class="socials__link--yt" href="#">Youtube</a></li>
+        </ul>
+        <p class="page-footer__copyright">
+          Разработано:
+          <a class="btn page-footer__copyright" href="#">htmlacademy</a>
+        </p>
       </div>
-      <ul class="page-footer__socials socials">
-        <li class="socials__item"><a class="socials__link--tw" href="#">Twitter</a></li>
-        <li class="socials__item"><a class="socials__link--fb" href="#">Facebook</a></li>
-        <li class="socials__item"><a class="socials__link--yt" href="#">Youtube</a></li>
-      </ul>
-      <p class="page-footer__copyright">
-        Разработано:
-        <a class="btn page-footer__copyright" href="#">htmlacademy</a>
-      </p>
     </footer>
 
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p> -->
