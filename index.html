@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -20,11 +21,11 @@
       </nav>
       <img class="page-header__banner" src=""/>
       <div class="page-header__bottom">
-        <div class="btnbtn--download">Скачать приложение</div>
+        <div class="btn btn--download">Скачать приложение</div>
         <ul class="apps-links">
-          <li class="app-link app-link--apple"><a href=""></a></li>
-          <li class="app-link app-link--android"><a href=""></a></li>
-          <li class="app-link app-link--windows"><a href=""></a></li>
+          <li class="apps-links__link apps-links__link--apple"><a href=""></a></li>
+          <li class="apps-links__link apps-links__link--android"><a href=""></a></li>
+          <li class="apps-links__link apps-links__link--windows"><a href=""></a></li>
         </ul>
         <p>Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
@@ -58,9 +59,12 @@
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
-          <input type="radio" class="slider_input" id="reviews-input-1">
-          <input type="radio" class="slider_input" id="reviews-input-2" checked>
-          <input type="radio" class="slider_input" id="reviews-input-3">
+          <ul class="slider__controls">
+            <li class="slider_input"></li>
+            <li class="slider_input slider__input--active" ></li>
+            <li class="slider_input"></li>
+          </ul>
+
         </div>
       </section>
       <section class="advantages">
@@ -70,9 +74,11 @@
               <img src="">
             </li>
           </ul>
-          <input type="radio" class="slider_input" id="advantages-input-1">
-          <input type="radio" class="slider_input" id="advantages-input-2" checked>
-          <input type="radio" class="slider_input" id="advantages-input-3">
+          <ul class="slider__controls">
+            <li class="slider_input"></li>
+            <li class="slider_input slider__input--active"></li>
+            <li class="slider_input"></li>
+          </ul>
         </div>
       </section>
     </main>
@@ -93,7 +99,7 @@
             <p class="contacts__item-addr">ул. Большая<br>Конюшенная, 19/8</p>
           </li>
         </ul>
-        <div class="map"></div>
+        <div class="page-footer__map"></div>
       </div>
     </footer>
 
