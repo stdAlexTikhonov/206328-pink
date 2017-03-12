@@ -1,0 +1,16 @@
+.make-post {
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+  &__slider {
+    border-bottom: 3px solid black;
+
+  }
+  &__slider-control {
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-editor-diagram-fill.svg) no-repeat center;
+    background-size: 100%;
+  }
+}

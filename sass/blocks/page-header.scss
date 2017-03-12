@@ -17,7 +17,16 @@
       vertical-align: bottom;
     }
 
+
+
   }
+
+  &__container {
+    padding: 40px 20px;
+    color: #fff;
+  }
+
+
 
   &__banner {
     margin-top: 100px;
@@ -29,8 +38,13 @@
     background-color: #1d2631;
     padding: 20px;
 
-    color: white;
+    color: #fff;
     text-align: center;
+
+    &--white {
+      background-color: white;
+      color: #1d2631;
+    }
   }
 }
 
