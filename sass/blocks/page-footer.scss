@@ -1,0 +1,41 @@
+.page-footer {
+
+  &__title {
+    color: #283645;
+    font-size: 24px;
+  }
+  &__wrapper {
+    width: 280;
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  &__map {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-image: url(../img/bg-map-mobile@1x.png);
+    &:after {
+      display: block;
+      content: "";
+      width: 55%;
+      height: 50px;
+      background-color: white;
+      position: absolute;
+      right: -8px;
+      top: -13px;
+      transform: rotate(-10deg);
+    }
+    &:before {
+      display: block;
+      content: "";
+      width: 55%;
+      height: 50px;
+      background-color: white;
+      position: absolute;
+      left: -8px;
+      top: -13px;
+      transform: rotate(10deg);
+    }
+  }
+}
