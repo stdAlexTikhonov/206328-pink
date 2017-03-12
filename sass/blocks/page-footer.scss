@@ -11,10 +11,12 @@
   }
 
   &__map {
+    overflow: hidden;
     position: relative;
     height: 300px;
     width: 100%;
-    background-image: url(../img/bg-map-mobile@1x.png);
+    background: url(../img/bg-map-mobile@1x.png) no-repeat 0 0;
+    background-size: cover;
     &:after {
       display: block;
       content: "";
@@ -37,5 +39,13 @@
       top: -13px;
       transform: rotate(10deg);
     }
+  }
+
+  &__goto {
+    display: inline-block;
+    height: 35px;
+    width: 30px;
+    background: url(../img/htmlacademy.svg) no-repeat 50%;
+    vertical-align: middle;
   }
 }
