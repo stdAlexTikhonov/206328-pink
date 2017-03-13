@@ -1,0 +1,51 @@
+.page-footer {
+
+  &__title {
+    color: #283645;
+    font-size: 24px;
+  }
+  &__wrapper {
+    width: 280;
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  &__map {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background: url(../img/bg-map-mobile@1x.png) no-repeat 0 0;
+    background-size: cover;
+    &:after {
+      display: block;
+      content: "";
+      width: 55%;
+      height: 50px;
+      background-color: white;
+      position: absolute;
+      right: -8px;
+      top: -13px;
+      transform: rotate(-10deg);
+    }
+    &:before {
+      display: block;
+      content: "";
+      width: 55%;
+      height: 50px;
+      background-color: white;
+      position: absolute;
+      left: -8px;
+      top: -13px;
+      transform: rotate(10deg);
+    }
+  }
+
+  &__goto {
+    display: inline-block;
+    height: 35px;
+    width: 30px;
+    background: url(../img/htmlacademy.svg) no-repeat 50%;
+    vertical-align: middle;
+  }
+}

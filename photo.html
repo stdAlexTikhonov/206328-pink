@@ -2,11 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
-      <h1 class="page-title">Pink</h1>
+      <div class="page-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" width="77" height="25" alt="Pink"/>
+      </div>
       <nav class="main-menu main-menu--closed">
         <div class="main-menu__toggle">Открыть меню</div>
         <div class="main-menu__wrapper">
@@ -18,9 +22,11 @@
           </ul>
         </div>
       </nav>
+      <div class="page-header__container">
+         <h2 class="page-header__title">Фотографии пользователей</h2>
+      </div>
 
-      <h2 class="page-header__title">Фотографии пользователей</h2>
-      <div class="page-header__bottom"><p>Взгляните на фотографии, которые выкладывают пользователи!<br>
+      <div class="page-header__bottom page-header__bottom--white"><p>Взгляните на фотографии, которые выкладывают пользователи!<br>
         Видите, как не хватает ваших?</p></div>
     </header>
     <main>
@@ -29,7 +35,7 @@
           <ul class="posts__items">
             <li class="posts__item">
                 <div class="posts__photo">
-                  <img src="">
+                  <img src="img/panorama-mobile@1x.jpg">
                 </div>
                 <cite class="posts__author">Анна (5 минут назад)</cite>
                 <p class="posts__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -37,51 +43,51 @@
             </li>
             <li class="posts__item">
                 <div class="posts__photo">
-                  <img src="">
+                  <img src="img/photo-1-mobile@1x.jpg">
                 </div>
                 <cite class="posts__author">Левон (5 часов назад)</cite>
                 <p class="posts__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <div class="like">мне нравится</div>
+                <div class="posts__like">мне нравится</div>
             </li>
             <li class="posts__item">
                 <div class="posts__photo">
-                  <img src="">
+                  <img src="img/photo-2-mobile@1x.jpg">
                 </div>
                 <cite class="posts__author">Антон (12 часов назад)</cite>
                 <p class="posts__desc">Соседи будут рады!</p>
-                <div class="like">мне нравится</div>
+                <div class="posts_like">мне нравится</div>
             </li>
             <li class="posts__item">
                 <div class="posts__photo">
-                  <img src="">
+                  <img src="img/photo-3-mobile@1x.jpg">
                 </div>
                 <cite class="posts__author">Борис (20 часов назад)</cite>
                 <p class="posts__desc"> Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <div class="like">мне нравится</div>
+                <div class="posts__like">мне нравится</div>
             </li>
             <li class="posts__item">
                 <div class="posts__photo">
-                  <img src="">
+                  <img src="img/photo-4-mobile@1x.jpg">
                 </div>
                 <cite class="posts__author">Сергей (25 часов назад)</cite>
                 <p class="posts__desc"> Самая кубанская в мире</p>
-                <div class="like">мне нравится</div>
+                <div class="posts__like">мне нравится</div>
             </li>
             <li class="posts__item">
                 <div class="posts__photo">
-                  <img src="">
+                  <img src="img/photo-5-mobile@1x.jpg">
                 </div>
                 <cite class="posts__author">Максим (40 часов назад)</cite>
                 <p class="posts__desc"> Где снег-то?</p>
-                <div class="like">мне нравится</div>
+                <div class="posts__like">мне нравится</div>
             </li>
             <li class="posts__item">
                 <div class="posts__photo">
-                  <img src="">
+                  <img src="img/photo-6-mobile@1x.jpg">
                 </div>
                 <cite class="posts__author">Надежда (45 часов назад)</cite>
                 <p class="posts__desc">Всем GM и взаимные лайки!</p>
-                <div class="like">мне нравится</div>
+                <div class="posts__like">мне нравится</div>
             </li>
 
           </ul>
@@ -91,34 +97,38 @@
         </div>
       </section>
       <secion class="make-post">
-        <div class="make-post__photo">
-          <img src="">
+        <div class="make-post__wrapper">
+          <div class="make-post__photo">
+            <img src="img/photo-7-mobile@1x.jpg">
+          </div>
+
+          <ul class="make-post__tools">
+            <li class="make-post__tool"><img src="img/icon-editor-crop.svg"></li>
+            <li class="make-post__tool"><img src="img/icon-editor-fill.svg"></li>
+            <li class="make-post__tool"><img src="img/icon-editor-contrast.svg"></li>
+          </ul>
+
+          <div class="make-post__slider">
+            <div class="make-post__slider-control"></div>
+          </div>
+          <button class="btn btn--add">Запостить</button>
+          <button class="btn btn--cancel">Отмена</button>
         </div>
-
-        <ul class="make-post__tools">
-          <li class="make-post__tool">Обрезать</li>
-          <li class="make-post__tool">Фильтр</li>
-          <li class="make-post__tool">Яркость</li>
-        </ul>
-
-        <div></div>
-        <button class="btn btn--add">Запостить</button>
-        <button class="btn btn--cancel">Отмена</button>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <span class="logo"></span><span class="logo__title">PINK</span>
+          <img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink"/>
         </div>
         <ul class="page-footer__socials socials">
-          <li class="socials__item"><a class="socials__link--tw" href="#">Twitter</a></li>
-          <li class="socials__item"><a class="socials__link--fb" href="#">Facebook</a></li>
-          <li class="socials__item"><a class="socials__link--yt" href="#">Youtube</a></li>
+          <li class="socials__item"><a class="socials__link--tw" href="#"></a></li>
+          <li class="socials__item"><a class="socials__link--fb" href="#"></a></li>
+          <li class="socials__item"><a class="socials__link--yt" href="#"></a></li>
         </ul>
         <p class="page-footer__copyright">
           Разработано:
-          <a class="btn page-footer__copyright" href="#">htmlacademy</a>
+          <a class="page-footer__goto" href="#"></a>
         </p>
       </div>
     </footer>

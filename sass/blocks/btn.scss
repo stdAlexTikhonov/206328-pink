@@ -1,0 +1,15 @@
+.btn {
+  font-family: "OpenSansBold";
+  color: white;
+  width: 90%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-align: center;
+  margin: 0 auto;
+
+  &--download {
+    border: 2px solid white;
+    padding: 10px;
+  }
+}

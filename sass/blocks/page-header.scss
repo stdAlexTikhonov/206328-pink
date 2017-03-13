@@ -1,0 +1,66 @@
+.page-header {
+  background-color: #1d2631;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  width: 280;
+  background-size: cover;
+  background-position: 50%;
+
+  &__logo {
+    background-color: rgba(178,178,178,0.1);
+    width: 100%;
+    img {
+      position: absolute;
+      z-index: 5;
+      top: 20px;
+      left: 20px;
+      // margin: 20px;
+      vertical-align: bottom;
+    }
+
+
+
+  }
+
+  &__container {
+    padding: 40px 20px;
+    color: #fff;
+  }
+
+
+
+  &__banner {
+    margin-top: 100px;
+    margin-bottom: -5px;
+    width: 90%;
+  }
+
+  &__bottom {
+    background-color: #1d2631;
+    padding: 20px;
+
+    color: #fff;
+    text-align: center;
+
+    &--white {
+      background-color: white;
+      color: #1d2631;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .page-header {
+    width: 640px;
+    padding: 0 64px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    width: 960px;
+    padding: 0 120px;
+  }
+
+}

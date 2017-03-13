@@ -1,0 +1,36 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+
+  }
+
+  &__link {
+
+
+    &--tw {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icon-twitter.svg) no-repeat 50%;
+    }
+
+    &--fb {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icon-facebook.svg) no-repeat 50%;
+    }
+
+    &--yt {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icon-youtube.svg) no-repeat 50%;
+    }
+  }
+
+}
