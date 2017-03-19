@@ -3,13 +3,13 @@
   &__wrapper {
     @include container();
   }
-  // background-color: #1d2631;
-  // background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-color: #1d2631;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-size: cover;
   background-position: 50%;
 
   &__logo {
-    background-color: rgba(178,178,178,0.1);
+    background-color: rgba(178,178,178,0.2);
     img {
       margin: 20px;
     }
