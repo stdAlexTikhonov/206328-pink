@@ -1,7 +1,7 @@
 .make-post {
   &__wrapper {
-    width: 280px;
-    margin: 0 auto;
+    @include container();
+    border: 1px solid black;
   }
   &__slider {
     border-bottom: 3px solid black;

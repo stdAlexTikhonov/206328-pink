@@ -1,0 +1,13 @@
+.posts {
+  &__wrapper {
+    @include container();
+    border: 1px solid black;
+    background-color: #f2f2f2;
+  }
+
+  &__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}

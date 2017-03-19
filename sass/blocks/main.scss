@@ -1,0 +1,7 @@
+
+.main {
+  &__wrapper {
+    @include container();
+    border: 1px solid black;
+  }
+}

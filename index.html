@@ -3,56 +3,62 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" width="77" height="25" alt="Pink"/>
-      </div>
-      <nav class="main-menu main-menu--closed">
-        <div class="main-menu__toggle">Открыть меню</div>
-        <div class="main-menu__wrapper">
-          <ul class="main-menu__items">
-            <li class="main-menu__item"><a href="#">Главная</a></li>
-            <li class="main-menu__item"><a href="#">Фотографии</a></li>
-            <li class="main-menu__item"><a href="#">Конкурс</a></li>
-            <li class="main-menu__item"><a href="#">htmlacademy</a></li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="76" height="25" alt="Pink"/>
         </div>
-      </nav>
-      <img class="page-header__banner" src="img/iphone-hand-mobile@1x.png"/>
-      <div class="page-header__bottom">
-        <div class="btn btn--download">Скачать приложение</div>
-        <ul class="apps-links">
-          <li class="apps-links__link apps-links__link--apple"><a href=""></a></li>
-          <li class="apps-links__link apps-links__link--android"><a href=""></a></li>
-          <li class="apps-links__link apps-links__link--windows"><a href=""></a></li>
-        </ul>
-        <p>Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</p>
+        <nav class="main-menu main-menu">
+          <button class="main-menu__toggle"></button>
+          <div class="main-menu__wrapper">
+            <ul class="main-menu__items">
+              <li class="main-menu__item"><a href="#">Главная</a></li>
+              <li class="main-menu__item"><a href="#">Фотографии</a></li>
+              <li class="main-menu__item"><a href="#">Конкурс</a></li>
+              <li class="main-menu__item"><a href="#">htmlacademy</a></li>
+            </ul>
+          </div>
+        </nav>
+        <img class="page-header__banner" src="img/iphone-hand-mobile@1x.png"/>
+        <div class="page-header__bottom">
+          <div class="btn btn--download">Скачать приложение</div>
+          <ul class="apps-links">
+            <li class="apps-links__link apps-links__link--apple"><a href=""></a></li>
+            <li class="apps-links__link apps-links__link--android"><a href=""></a></li>
+            <li class="apps-links__link apps-links__link--windows"><a href=""></a></li>
+          </ul>
+          <p>Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </header>
     <main>
       <section class="intro">
-        <div class="intro__title-group">
-          <div class="intro__title">Устали от серости мегаполиса?</div>
-          <div class="intro__title">Нам есть, что вам предложить!</div>
+        <div class="intro__wrapper">
+          <div class="intro__title-group">
+            <div class="intro__title">Устали от серости мегаполиса?</div>
+            <div class="intro__title">Нам есть, что вам предложить!</div>
+          </div>
+          <ul class="intro__suggestions">
+            <li class="intro__item suggestion">
+              <h3 class="suggestion__title">Поднимает настроение</h3>
+              <p class="suggestion__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="intro__item suggestion">
+              <h3 class="suggestion__title">Меняет мир вокруг</h3>
+              <p class="suggestion__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="intro__item suggestion">
+              <h3 class="suggestion__title">Заводит новых друзей</h3>
+              <p class="suggestion__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
         </div>
-        <ul class="intro__suggestions">
-          <li class="intro__item suggestion">
-            <h3 class="suggestion__title">Поднимает настроение</h3>
-            <p class="suggestion__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="intro__item suggestion">
-            <h3 class="suggestion__title">Меняет мир вокруг</h3>
-            <p class="suggestion__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="intro__item suggestion">
-            <h3 class="suggestion__title">Заводит новых друзей</h3>
-            <p class="suggestion__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -117,8 +123,9 @@
             <p class="contacts__item-val">ул. Большая<br>Конюшенная, 19/8</p>
           </li>
         </ul>
+        <div class="page-footer__map"></div>
       </div>
-      <div class="page-footer__map"></div>
+
     </footer>
 
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p> -->

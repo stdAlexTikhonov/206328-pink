@@ -1,4 +1,15 @@
 .page {
   margin: 0;
-  font-family: "OpenSans";
+  font-family: OpenSans, Sans, serif;
+}
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 640px;
+  }
+  @media (min-width: 1200px) {
+    width: 960px;
+  }
 }

@@ -1,10 +1,7 @@
 .reviews {
   &__wrapper {
-
-    overflow: hidden;
-    margin: 0 auto;
-    width: 280px;
-
+    @include container();
+    border: 1px solid black;
   }
   &__items {
 

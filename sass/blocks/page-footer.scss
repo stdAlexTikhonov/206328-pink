@@ -5,9 +5,8 @@
     font-size: 24px;
   }
   &__wrapper {
-    width: 280;
-    margin: 0 20px;
-    text-align: center;
+    @include container();
+    border: 1px solid black;
   }
 
   &__map {
@@ -17,28 +16,28 @@
     width: 100%;
     background: url(../img/bg-map-mobile@1x.png) no-repeat 0 0;
     background-size: cover;
-    &:after {
-      display: block;
-      content: "";
-      width: 55%;
-      height: 50px;
-      background-color: white;
-      position: absolute;
-      right: -8px;
-      top: -13px;
-      transform: rotate(-10deg);
-    }
-    &:before {
-      display: block;
-      content: "";
-      width: 55%;
-      height: 50px;
-      background-color: white;
-      position: absolute;
-      left: -8px;
-      top: -13px;
-      transform: rotate(10deg);
-    }
+    // &:after {
+    //   display: block;
+    //   content: "";
+    //   width: 55%;
+    //   height: 50px;
+    //   background-color: white;
+    //   position: absolute;
+    //   right: -8px;
+    //   top: -13px;
+    //   transform: rotate(-10deg);
+    // }
+    // &:before {
+    //   display: block;
+    //   content: "";
+    //   width: 55%;
+    //   height: 50px;
+    //   background-color: white;
+    //   position: absolute;
+    //   left: -8px;
+    //   top: -13px;
+    //   transform: rotate(10deg);
+    // }
   }
 
   &__goto {

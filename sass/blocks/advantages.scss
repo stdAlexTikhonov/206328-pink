@@ -1,12 +1,9 @@
 .advantages {
-  background-color: #f2f2f2;
+
   &__wrapper {
-
-    overflow: hidden;
-    margin: 0 auto;
-    width: 280px;
-
-
+    @include container();
+    border: 1px solid black;
+    background-color: #f2f2f2;
   }
   &__items {
 
