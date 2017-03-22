@@ -1,6 +1,8 @@
 .main-menu {
   position: relative;
   background-color: #283645;
+  width: 320px;
+  margin: 0 auto;
 
   &--closed {
     .main-menu__items {
@@ -64,22 +66,24 @@
 
 @media (min-width: 768px) {
   .main-menu {
+    width: 700px;
+
     &__toggle {
-      right: 20px;
+      right: 40px;
       top: -74px;
     }
 
     &__items:before {
       height: 110px;
       background: #283645 url(../img/logotype-white-tablet.png) no-repeat 40px 25px;
-      background-size: 150px 40px;
+      background-size: 147px 41px;
       top: -110px;
     }
 
   }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1200px) {
   .main-menu {
 
     &--closed {
