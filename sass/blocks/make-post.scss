@@ -1,10 +1,10 @@
 .make-post {
   &__wrapper {
     @include container();
-    border: 1px solid black;
+    height: 757px;
+    background-color: rgba(0,255,0,0.5);
   }
   &__slider {
-    border-bottom: 3px solid black;
 
   }
   &__slider-control {
@@ -13,4 +13,22 @@
     background: url(../img/icon-editor-diagram-fill.svg) no-repeat center;
     background-size: 100%;
   }
+}
+
+@media (min-width: 768px) {
+  .make-post {
+    &__wrapper {
+      height: 511px;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .make-post {
+    &__wrapper {
+      height: 514px;
+    }
+  }
+
 }

@@ -6,23 +6,38 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page">
+  <body class="page page__photo">
     <header class="page-header">
-      <div class="page-header__wrapper">
-      <div class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" width="77" height="25" alt="Pink"/>
+        <header class="page-header">
+      <div class="page-header__logo page-header__logo--mobile">
+        <div class="page-header__wrapper">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"/>
+        </div>
+      </div>
+      <div class="page-header__logo page-header__logo--tablet">
+        <div class="page-header__wrapper">
+          <img src="img/logotype-white-tablet.png" width="147" height="41" alt="Pink"/>
+        </div>
+
+      </div>
+      <div class="page-header__logo page-header__logo--desktop">
+        <div class="page-header__wrapper">
+          <img src="img/logotype-white-desktop.png" width="148" height="40" alt="Pink"/>
+        </div>
       </div>
       <nav class="main-menu">
-        <div class="main-menu__toggle"></div>
-        <div class="main-menu__wrapper">
+
+        <button class="main-menu__toggle"></button>
+
           <ul class="main-menu__items">
             <li class="main-menu__item"><a href="#">Главная</a></li>
             <li class="main-menu__item"><a href="#">Фотографии</a></li>
             <li class="main-menu__item"><a href="#">Конкурс</a></li>
-            <li class="main-menu__item"><a href="#">htmlacademy</a></li>
+            <li class="main-menu__item"><a href="#">html academy</a></li>
           </ul>
-        </div>
+
       </nav>
+      <div class="page-header__wrapper">
       <div class="page-header__container">
          <h2 class="page-header__title">Фотографии пользователей</h2>
       </div>
@@ -33,12 +48,12 @@
     </header>
     <main>
       <section class="posts">
+        <div class="posts__panorama">
+          <img src="img/panorama-mobile@1x.jpg">
+         </div>
         <div class="posts__wrapper">
           <ul class="posts__items">
             <li class="posts__item">
-                <div class="posts__photo">
-                  <img src="img/panorama-mobile@1x.jpg">
-                </div>
                 <cite class="posts__author">Анна (5 минут назад)</cite>
                 <p class="posts__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <div class="like">мне нравится</div>
@@ -136,6 +151,7 @@
     </footer>
 
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p> -->
-
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

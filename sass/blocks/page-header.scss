@@ -40,10 +40,20 @@
 
   }
 
+  &__title {
+    margin: 0;
+  }
+
 
   &__banner {
     vertical-align: bottom;
     height: 396px;
+  }
+
+  &__container {
+
+    height: 171px;
+    background-color: rgba(255,0,0,0.5);
   }
 
   &__bottom {
@@ -54,8 +64,10 @@
     text-align: center;
 
     &--white {
-      background-color: white;
+      background-color: rgba(0,255,0,0.5);
       color: #1d2631;
+      height: 184px;
+      p { margin: 0; }
     }
   }
 }
@@ -75,11 +87,20 @@
   .page-header {
     &__bottom {
       // background: transparent;
-      display: none;
+      &--main { display: none; }
     }
     &__banner {
       height: 619px;
       background: rgba(255,0,0,0.3);
+    }
+    &__container {
+      height: 330px;
+    }
+
+    &__bottom {
+      &--white {
+        height: 228px;
+      }
     }
   }
 }
@@ -104,6 +125,16 @@
   .page-header {
     &__banner {
       height: 743px;
+    }
+
+    &__container {
+      height: 284px;
+    }
+
+    &__bottom {
+      &--white {
+        height: 240px;
+      }
     }
   }
 }
