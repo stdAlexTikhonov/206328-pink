@@ -1,28 +1,29 @@
-.advantages {
-
+.questions {
+  
   &__wrapper {
     @include container();
-    height: 470px;
-    background-color: rgba(255,0,0,0.5);
+    height: 411px;
+    background-color: rgba(0,255,0,0.5);
   }
   &__items {
 
   }
+  &__title {
+    margin: 0;
+  }
 }
-
 @media (min-width: 768px) { 
-  .advantages {
+  .questions {
     &__wrapper {
-      height: 376px;
+      height: 402px;
     }
   }
-
 }
 
 @media (min-width: 1200px) { 
-  .advantages {
+  .questions {
     &__wrapper {
-      height: 524px;
+      height: 367px;
     }
   }
 }

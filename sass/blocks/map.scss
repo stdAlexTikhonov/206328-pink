@@ -1,25 +1,23 @@
-.reviews {
+.map {
   &__wrapper {
     @include container();
-    height: 354px;
     background-color: rgba(0,0,255,0.5);
-  }
-  &__items {
-
+    height: 202px;
   }
 }
+
 @media (min-width: 768px) { 
-  .reviews {
+  .map {
     &__wrapper {
-      height: 302px;
+      height: 378px;
     }
   }
 }
 
 @media (min-width: 1200px) { 
-  .reviews {
+  .map {
     &__wrapper {
-      height: 414px;
+      height: 502px;
     }
   }
 }

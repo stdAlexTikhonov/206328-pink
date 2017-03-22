@@ -19,10 +19,10 @@
       position: absolute;
       display: block;
       width: 100%;
-      height: 70px;
-      background: #283645 url(../img/logo-pink-white-mobile.svg) no-repeat 20px 20px;
-      background-size: 76px 25px;
-      top: -70px;
+      height: 66px;
+      background: #283645 url(../img/logo-pink-white-mobile.svg) no-repeat 20px 22px;
+      background-size: 76px 22px;
+      top: -66px;
       left: 0;
     }
   }
@@ -43,45 +43,74 @@
   }
 
   &__toggle {
-    height: 70px;
+    height: 40px;
     position: absolute;
-    top: -70px;
-    right: 0;
-    width: 70px;
+    top: -53px;
+    right: 20px;
+    width: 50px;
     background: url(../img/icon-menu-cross.svg) no-repeat 50% 50%;
     z-index: 2;
     &.main-menu__toggle--burger {
       background-image: url(../img/icon-menu-burger.svg);
 
     }
-    // background: transparent;
     border: none;
     outline: none;
-    // &:after {
-    //   position: absolute;
-    //   top: 30px;
-    //   right: 16px;
-    //   display: block;
-    //   content: "";
-    //   width: 30px;
-    //   height: 5px;
-    //   background: white;
-    //   transform: rotate(44deg);
-    // }
-    // &:before {
-    //   position: absolute;
-    //   top: 30px;
-    //   right: 16px;
-    //   display: block;
-    //   content: "";
-    //   width: 30px;
-    //   height: 5px;
-    //   background: white;
-    //   transform: rotate(-44deg);
-    //
-    // }
+
   }
 
+}
 
 
+@media (min-width: 768px) {
+  .main-menu {
+    &__toggle {
+      right: 20px;
+      top: -74px;
+    }
+
+    &__items:before {
+      height: 110px;
+      background: #283645 url(../img/logotype-white-tablet.png) no-repeat 40px 25px;
+      background-size: 150px 40px;
+      top: -110px;
+    }
+
+  }
+}
+
+@media (min-width: 1220px) {
+  .main-menu {
+
+    &--closed {
+      .main-menu__items {
+        display: block;
+      }
+    }
+    background-color: transparent;
+    &__toggle {
+      display: none;
+    }
+    &__item {
+      display: inline-block;
+      margin-left: 30px;
+      a {
+        font-family: "OpenSansLight";
+        border: none;
+        text-transform: capitalize;
+      }
+
+    }
+    &__items:before {
+      display: none;
+    }
+    &__items {
+      position: absolute;
+      top: -90px;
+      z-index: 35;
+      border: none;
+
+
+    }
+  }
 }
