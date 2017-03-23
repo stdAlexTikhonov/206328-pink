@@ -1,4 +1,7 @@
 .page-footer {
+  &--hidden-mobile {
+    display: none;
+  }
 
   &__title {
     color: #283645;
@@ -7,7 +10,7 @@
   &__wrapper {
     @include container();
     background-color: rgba(255,0,0,0.5);
-    display: none;
+    height: 284px;
   }
 
 
@@ -22,6 +25,9 @@
 
 @media (min-width: 768px) { 
   .page-footer {
+    &--hidden-mobile {
+      display: block;
+    }
     &__wrapper {
       display: block;
       height: 127px;
