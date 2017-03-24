@@ -28,3 +28,20 @@ body {
   }
   
 }
+
+
+.page__form {
+  background: #ccc url(../img/pink-form-mobile.jpg) no-repeat 50% 0;
+  background-size: 320px;
+
+
+  @media (min-width: 768px) {
+    background: #ccc url(../img/pink-form-tablet.jpg) no-repeat 50% 0;
+    background-size: 700px;
+  }
+  @media (min-width: 1200px) {
+    background: #ccc url(../img/pink-form-desktop.jpg) no-repeat 50% 0;
+    background-size: 1200px;
+  }
+  
+}
