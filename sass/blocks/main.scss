@@ -1,0 +1,19 @@
+
+.main {
+  &__top {
+    @include container();
+    height: 160px;
+    background-color: rgba(0,255,0,0.5);
+    p {
+    	margin: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+	.main {
+		&__top {
+			height: 210px;
+		}
+	}
+}

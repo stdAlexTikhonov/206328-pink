@@ -1,27 +1,25 @@
-.apps {
+.emotions {
 	padding: 0;
 	border: none;
 	&__wrapper {
 		
-		height: 340px;
-		background-color: rgba(255,0,255,0.5);
+		height: 300px;
+		background-color: rgba(255,255,0,0.5);
 		p { margin: 0; }
 
 	}
 }
-
 @media (min-width: 768px) {
-	.apps {
+	.emotions {
 		&__wrapper {
-			height: 380px;
+			height: 360px;
 		}
 	}
 }
-
 @media (min-width: 1200px) {
-	.apps {
+	.emotions {
 		&__wrapper {
-			height: 350px;
+			height: 270px;
 		}
 	}
 }

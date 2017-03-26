@@ -1,0 +1,27 @@
+.nameinfo {
+	padding: 0;
+	border: none;
+	&__wrapper {
+		
+		height: 380px;
+		background-color: rgba(0,0,255,0.5);
+
+
+	}
+}
+
+@media (min-width: 768px) {
+	.nameinfo {
+		&__wrapper {
+			height: 350px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.nameinfo {
+		&__wrapper {
+			height: 350px;
+		}
+	}
+}

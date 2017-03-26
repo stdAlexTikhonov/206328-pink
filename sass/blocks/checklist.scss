@@ -1,0 +1,26 @@
+.checklist {
+	padding: 0;
+	border: none;
+	&__wrapper {
+
+		height: 604px;
+		background-color: rgba(255,0,0,0.5);
+		p { margin: 0; }
+
+	}
+}
+@media (min-width: 768px) {
+	.checklist {
+		&__wrapper {
+			height: 615px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.checklist {
+		&__wrapper {
+			height: 300px;
+		}
+	}
+}

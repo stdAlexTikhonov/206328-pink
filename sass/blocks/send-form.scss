@@ -1,27 +1,23 @@
-.user-contacts {
-	padding: 0;
-	border: none;
+.send-form {
 	&__wrapper {
-		
-		height: 287px;
+		@include container();
+		height: 164px;
 		background-color: rgba(0,255,0,0.5);
 		p { margin: 0; }
 
 	}
 }
-
 @media (min-width: 768px) {
-	.user-contacts {
+	.send-form {
 		&__wrapper {
-			height: 380px;
+			height: 122px;
 		}
 	}
 }
-
 @media (min-width: 1200px) {
-	.user-contacts {
+	.send-form {
 		&__wrapper {
-			height: 230px;
+			height: 105px;
 		}
 	}
 }

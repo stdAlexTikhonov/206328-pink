@@ -1,10 +1,13 @@
 .make-post {
   &__wrapper {
-    width: 280px;
-    margin: 0 auto;
+    @include container();
+    height: 757px;
+    background-color: rgba(0,255,0,0.5);
+  }
+  &__photo {
+    float: left;
   }
   &__slider {
-    border-bottom: 3px solid black;
 
   }
   &__slider-control {
@@ -13,4 +16,31 @@
     background: url(../img/icon-editor-diagram-fill.svg) no-repeat center;
     background-size: 100%;
   }
+
+  &__tools {
+    list-style: none;
+    float: right;
+  }
+
+  &__tool {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .make-post {
+    &__wrapper {
+      height: 511px;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .make-post {
+    &__wrapper {
+      height: 514px;
+    }
+  }
+
 }

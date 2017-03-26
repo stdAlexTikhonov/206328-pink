@@ -1,45 +1,18 @@
 .page-footer {
+  &--hidden-mobile {
+    display: none;
+  }
 
   &__title {
     color: #283645;
     font-size: 24px;
   }
   &__wrapper {
-    width: 280;
-    margin: 0 20px;
-    text-align: center;
+    @include container();
+    background-color: rgba(255,0,0,0.5);
+    height: 284px;
   }
 
-  &__map {
-    overflow: hidden;
-    position: relative;
-    height: 300px;
-    width: 100%;
-    background: url(../img/bg-map-mobile@1x.png) no-repeat 0 0;
-    background-size: cover;
-    &:after {
-      display: block;
-      content: "";
-      width: 55%;
-      height: 50px;
-      background-color: white;
-      position: absolute;
-      right: -8px;
-      top: -13px;
-      transform: rotate(-10deg);
-    }
-    &:before {
-      display: block;
-      content: "";
-      width: 55%;
-      height: 50px;
-      background-color: white;
-      position: absolute;
-      left: -8px;
-      top: -13px;
-      transform: rotate(10deg);
-    }
-  }
 
   &__goto {
     display: inline-block;
@@ -47,5 +20,25 @@
     width: 30px;
     background: url(../img/htmlacademy.svg) no-repeat 50%;
     vertical-align: middle;
+  }
+}
+
+@media (min-width: 768px) { 
+  .page-footer {
+    &--hidden-mobile {
+      display: block;
+    }
+    &__wrapper {
+      display: block;
+      height: 127px;
+    }
+  }
+}
+
+@media (min-width: 1200px) { 
+  .page-footer {
+    &__wrapper {
+      height: 197px;
+    }
   }
 }
