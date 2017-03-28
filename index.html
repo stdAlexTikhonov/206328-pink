@@ -33,7 +33,7 @@
             <li class="main-menu__item"><a href="#">Главная</a></li>
             <li class="main-menu__item"><a href="#">Фотографии</a></li>
             <li class="main-menu__item"><a href="#">Конкурс</a></li>
-            <li class="main-menu__item"><a href="#">html academy</a></li>
+            <li class="main-menu__item"><a href="#"><span class="html">html</span> academy</a></li>
           </ul>
 
       </nav>
@@ -43,8 +43,9 @@
         <div class="page-header__banner">
           <!-- <img class="page-header__banner" src="img/iphone-hand-mobile@1x.png"/> -->
         </div>
+        <div class="page-header__title--index"><span>Взгляните</span><span>на жизнь</span><span>иначе!</span></div>
 
-        <div class="page-header__bottom page-header__bottom--main">
+        <div class="page-header__actions">
           <div class="btn btn--download">Скачать приложение</div>
           <ul class="apps-links">
             <li class="apps-links__link apps-links__link--apple"><a href=""></a></li>
@@ -53,15 +54,23 @@
           </ul>
           <p>Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
+
+      </div>
+      <div class="page-header__bottom page-header__bottom--main">
+ 
+        
       </div>
     </header>
     <main>
       <section class="intro">
-        <div class="intro__wrapper">
-          <div class="intro__title-group">
+        <div class="intro__title-group">
+          <div class="intro__title-group-wrapper">
             <div class="intro__title">Устали от серости мегаполиса?</div>
             <div class="intro__title">Нам есть, что вам предложить!</div>
           </div>
+        </div>
+        <div class="intro__wrapper">
+          
           <ul class="intro__suggestions">
             <li class="intro__item suggestion">
               <h3 class="suggestion__title">Поднимает настроение</h3>
@@ -76,6 +85,22 @@
               <p class="suggestion__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
+          <img src="img/iphone-screen-mobile@1x.png">
+        </div>
+      </section>
+      <section class="effect">
+        <div class="effect__wrapper">
+          <div class="effect__block effect__block--img">
+
+          </div>
+          <div class="effect__block">
+            <div class="effect__title">Эффект<br> на 24 часа!</div>
+            <p class="effect__desc">Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится 
+            целые сутки!</p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -85,14 +110,14 @@
               <h2 class="reviews__author">Николай Петров</h2>
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <!-- <li class="reviews__item slider__item">
+            <li class="reviews__item slider__item">
               <h2 class="reviews__author">Николай Петров</h2>
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="reviews__item slider__item">
               <h2 class="reviews__author">Николай Петров</h2>
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li> -->
+            </li>
           </ul>
           <ul class="slider__controls">
             <li class="slider__input"></li>
@@ -103,18 +128,24 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="advantages__wrapper slider">
-          <ul class="slider__items">
+        <div class="advantages__wrapper">
+          <!--<ul class="slider__items">
             <li class="advantages__item slider__item">
               <img src="">
             </li>
-            <!-- <li class="advantages__item slider__item">
+             <li class="advantages__item slider__item">
               <img src="">
             </li>
             <li class="advantages__item slider__item">
               <img src="">
-            </li> -->
-          </ul>
+            </li>
+          </ul>-->
+          <table class="advantages__table">
+            <tr><th></th><th><div>база</div><div>1,99 usd</div></th><th><div>стандарт</div> <div>3,99 usd</div></th><th><div>анлим</div><div>9,99 usd</div></th></tr>
+            <tr><td>Розовый фильтр</td><td></td><td></td><td></td></tr>
+            <tr><td>Смайлики</td><td></td><td></td><td></td></tr>
+            <tr><td>Комментарии</td><td></td><td></td><td></td></tr>
+          </table>
 
           <ul class="slider__controls">
             <li class="slider__input"></li>
@@ -131,8 +162,8 @@
               <h3 class="questions__item-title">Звоните:</h3>
               <a class="questions__item-val"href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
             </li>
-            <li class="questions__item">
-              <h3 class="cquestions__item-title">Пишите:</h3>
+            <li class="questions__item questions__item-2">
+              <h3 class="questions__item-title">Пишите:</h3>
               <p class="questions__item-val">mail@htmlacademy.ru</p>
             </li>
             <li class="questions__item">
@@ -143,7 +174,8 @@
         </div>
       </section>
       <section class="map">
-        <div class="map__wrapper"></div>
+        <!-- <div class="map__wrapper"></div> -->
+        <div id="map-canvas" class="map"></div>
       </section>
     </main>
     <footer class="page-footer page-footer--hidden-mobile">
@@ -165,7 +197,10 @@
 
 
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p> -->
+
   <script src="js/jquery.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="js/map.js"></script>
   </body>
 </html>

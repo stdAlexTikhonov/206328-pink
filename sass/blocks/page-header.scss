@@ -2,10 +2,10 @@
 
   &__wrapper {
     @include container();
-
+    position: relative;
   }
-  // background-color: #1d2631;
-  // background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-color: #1d2631;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-size: cover;
   background-position: 50%;
 
@@ -47,18 +47,39 @@
       height: 171px;
       background-color: rgba(255,0,0,0.5);
     }
+    &--index {
+      display: none;
+      -webkit-font-smoothing: antialiased;
+    }
   }
 
 
   &__banner {
     vertical-align: bottom;
     height: 396px;
+    background: url(../img/iphone-hand-mobile@1x.png) no-repeat 0 100%;
   }
 
   &__container {
 
     height: 171px;
     background-color: rgba(255,0,0,0.5);
+  }
+
+  &__actions {
+    position: absolute;
+    top: 396px;
+    left: 0;
+    text-align: center;
+    width: 320px;
+    color: white;
+    p {
+        line-height: 24px;
+        font-size: 14px;
+        margin-top: -5px;
+        padding: 0 25px;
+        letter-spacing: -0.3px;
+     }
   }
 
   &__bottom {
@@ -74,6 +95,14 @@
       height: 184px;
       p { margin: 0; }
     }
+
+    &--main {
+      // width: 320px;
+       //margin: 0 auto;
+
+
+    }
+    
   }
 }
 
@@ -91,12 +120,13 @@
   }
   .page-header {
     &__bottom {
-      // background: transparent;
-      &--main { display: none; }
+
     }
     &__banner {
       height: 619px;
-      background: rgba(255,0,0,0.3);
+      background: none;
+     /* background-size: 70%;
+      background-position: 100% 100%; */
     }
     &__container {
       height: 330px;
@@ -106,12 +136,52 @@
       &--white {
         height: 228px;
       }
+      &--main {
+        display: none;
+      }
     }
+
+    &__actions {
+      top: 240px;
+      width: 340px;
+      p {
+        line-height: 25px;
+        font-size: 17.5px;
+        margin-top: -5px;
+        padding: 4px 23px;
+        letter-spacing: -0.2px;
+     }
+    }
+
     &__title {
       &--form {
         height: 330px;
       }
+      &--index {
+        display: block;
+        font-family: OpenSansLight, Sans, serif;
+        font-size: 40px;
+        text-align: center;
+        width: 190px;
+        position: absolute;
+        top: 89px;
+        left: 74px;
+        color: white;
+        line-height: 56px;
+        span {
+          display: block;
+          &:nth-of-type(2) {
+            line-height: 40px;
+            padding-left: 4px;
+          }
+          &:last-of-type {
+            padding-left: 2px;
+          }
+        }
+
+      }
     }
+
   }
 }
 
@@ -135,6 +205,8 @@
   .page-header {
     &__banner {
       height: 743px;
+      background-size: 55%;
+      background-position: 70% 100%;
     }
 
     &__container {
@@ -147,10 +219,27 @@
       }
     }
 
+    &__actions {
+      top: 312.5px;
+      left: -9.5px;
+    }
+
     &__title {
       &--form {
         height: 284px;
       }
+
+      &--index {
+        font-size: 50px;
+        width: 300px;
+        top: 110px;
+        left: 10px;
+        span:nth-of-type(2) {
+          line-height: 64px;
+          padding-left: 0;
+        }
+      }
+ 
     }
   }
 }

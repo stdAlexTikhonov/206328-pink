@@ -1,15 +1,23 @@
 .btn {
   font-family: "OpenSansBold";
   color: white;
-  width: 90%;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
   border-radius: 25px;
   text-align: center;
   margin: 0 auto;
+  cursor: pointer;
 
   &--download {
-    border: 2px solid white;
-    padding: 10px;
+    border: 3px solid white;
+    padding-top: 11px;
+    padding-bottom: 14px;
+    margin: 28px 20px 40px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 21px;
+    &--download {
+      padding-top: 10px;
+      padding-bottom: 11px;
+    }
   }
 }

@@ -1,19 +1,59 @@
 .advantages {
-
+  background-color: #f2f2f2;
   &__wrapper {
+    padding-top: 150px;
+    padding-bottom: 50px;
     @include container();
-    height: 470px;
-    background-color: rgba(255,0,0,0.5);
+    //height: 470px;
+    overflow: hidden;
+    text-align: center;
   }
-  &__items {
+  &__table {
+    width: 840px;
+    position: relative;
+    left: 20px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    transition: left 1s;
+    td {
+      background-color: white;
+      padding: 15px;
+      border: 1px solid grey;
+      width: 25%;
+    }
 
+    th {
+      color: white;
+      padding: 10px;
+      background: #283645;
+      &:first-child { 
+        visibility: hidden; 
+        display: none;
+      }
+
+    }
+    td:first-child {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 768px) { 
   .advantages {
-    &__wrapper {
-      height: 376px;
+    &__table {
+      width: 620px;
+      left: 0 !important;
+      td:first-child {
+        display: table-cell;
+      }
+      th:first-child {
+        display: table-cell;
+      }
+
+    }
+
+    .slider__controls {
+      display: none;
     }
   }
 
@@ -21,8 +61,8 @@
 
 @media (min-width: 1200px) { 
   .advantages {
-    &__wrapper {
-      height: 524px;
+    &__table {
+      width: 940px;
     }
   }
 }
