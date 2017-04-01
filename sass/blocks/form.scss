@@ -4,7 +4,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		@include container();
-		background-color: rgba(0,0,255,0.5);
+		background-color: white;
 	}
 
 	&__item {
@@ -20,6 +20,8 @@
 }
 
 @media (min-width: 768px) {
+	.form__item {
+	}
 	.form__item--item-2 {
 		order: 4;
 	}
@@ -30,9 +32,11 @@
 
 @media (min-width: 1200px) {
 	.form__item--item-1 {
+		box-sizing: border-box;
 		width: 50%;
 	}
 	.form__item--item-4 {
 		width: 50%;
+		box-sizing: border-box;
 	}
 }

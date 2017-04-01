@@ -1,21 +1,73 @@
 .apps {
-	padding: 0;
-	border: none;
-	&__wrapper {
-		
-		height: 340px;
-		background-color: rgba(255,0,255,0.5);
-		p { margin: 0; }
+  background: #f2f2f2;
+  padding: 0;
+  border: none;
+  &__wrapper {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: flex-start;
+    height: 340px;
+    padding-left: 20px;
+	
+  }
+  &__title {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d22856;
+    background-color: #f2f2f2;
+    padding-top: 30px;
+  }
+  &__item {
+  	margin: 30px 10px;
+    input { 
+     &:checked+span:before {
+      background: url(../img/icon-map-marker.svg) no-repeat 50%;
+     }
+     display: none;
+     
+    }
+  }
+  &__item-text {
 
-	}
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #e5e5e5;
+      border-radius: 50%;
+      box-sizing: border-box;
+      margin-right: 30px;
+      background-color: #fff;
+    }
+  }
+
 }
 
 @media (min-width: 768px) {
-	.apps {
-		&__wrapper {
-			height: 380px;
-		}
+  .apps {
+  	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+  	background: #fff;
+	&__wrapper {
+		height: 380px;
 	}
+	&__title {
+      background-color: #fff;
+      padding-top: 0;
+    }
+    &__item {
+      margin: 30px;
+    }
+  }
 }
 
 @media (min-width: 1200px) {

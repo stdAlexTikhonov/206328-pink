@@ -2,14 +2,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
   &__item {
-    display: inline-block;
+
 
   }
 
   &__link {
-
+    min-width: 40px;
+    min-height: 40px;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
 
     &--tw {
       display: block;
@@ -32,5 +39,5 @@
       background: url(../img/icon-youtube.svg) no-repeat 50%;
     }
   }
-
 }
+

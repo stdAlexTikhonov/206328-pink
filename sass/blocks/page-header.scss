@@ -44,13 +44,19 @@
   &__title {
     margin: 0;
     &--form {
-      height: 171px;
-      background-color: rgba(255,0,0,0.5);
+      padding-top: 30px;
+      height: 141px;
+      /* background-color: rgba(255, 0, 0, 0.5); */
+      color: white;
+      font-family: OpenSansLight;
+      text-align: center;
+      margin: auto;
+      vertical-align: middle;    
     }
     &--index {
       display: none;
-      -webkit-font-smoothing: antialiased;
     }
+
   }
 
 
@@ -155,7 +161,9 @@
 
     &__title {
       &--form {
-        height: 330px;
+        height: 300px;
+        font-size: 50px;
+
       }
       &--index {
         display: block;

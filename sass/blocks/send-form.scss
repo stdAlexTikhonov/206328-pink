@@ -2,22 +2,49 @@
 	&__wrapper {
 		@include container();
 		height: 164px;
-		background-color: rgba(0,255,0,0.5);
-		p { margin: 0; }
-
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__btn {
+		height: 64px;
+		width: 280px;
+		background: #2aab6d;
+		text-transform: uppercase;
+		border: none;
+		font-size: 18px;
+		color: #fff;
+	}
+	&__text {
+	  font-size: 14px;
+	  text-transform: uppercase;
+	}
+	&__star {
+	  color: #d22856;
+	  margin: 10px;
+	}
+	&__dop {
+	  display: none;
 	}
 }
 @media (min-width: 768px) {
 	.send-form {
 		&__wrapper {
 			height: 122px;
+			flex-direction: row;
+			justify-content: space-between;
 		}
+
 	}
 }
 @media (min-width: 1200px) {
 	.send-form {
 		&__wrapper {
 			height: 105px;
+		}
+		&__dop {
+			display: inline;
 		}
 	}
 }
