@@ -11,7 +11,7 @@
   &__table {
     width: 840px;
     position: relative;
-    left: 20px;
+    left: -260px;
     margin: 0 auto;
     border-collapse: collapse;
     transition: left 1s;
@@ -45,6 +45,7 @@
       left: 0 !important;
       td:first-child {
         display: table-cell;
+        width: 27%;
       }
       th:first-child {
         display: table-cell;

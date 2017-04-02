@@ -11,7 +11,12 @@
 	&__block {
 		width: 50%;
 		&--img {
-			
+			height: 100%;
+			color: #d22856;
+			vertical-align: middle;
+			text-align: center;
+			font-family: "OpenSansBold";
+			background: url("../img/timer.svg") no-repeat 50%;
 		}
 	}
 }
@@ -26,11 +31,25 @@
 	 &__link {
 	 	color: #d22856;
 	 }
+	 &__block {
+	 	&--img {
+	 		font-size: 100px;
+			line-height: 350px;
+	 	}
+	 }
 	}
 }
 
 @media (min-width: 1200px) {
 	.effect__wrapper {
 		height: 465px;
+	}
+	.effect {
+		&__block {
+			&--img {
+			font-size: 136px;
+			line-height: 450px;
+			}
+		}
 	}
 }

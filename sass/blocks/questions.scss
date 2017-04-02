@@ -1,6 +1,6 @@
 .questions {
-  height: 411px;
   background-color: white;
+  position: relative;
   &__wrapper {
     @include container();
     height: 411px;
@@ -42,21 +42,21 @@
   }
 
   &:after {
-    padding: 0;
-    margin: 0;
     content: "";
     display: block;
-    height: 60px;
-    position: relative;
+    height: 30px;
+    width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
-    background: url(../img/bg-triangle-white-footer.svg) no-repeat 50%;
+    background: url(../img/bg-triangle-white-footer.svg) no-repeat 0 0;
+    background-size: 100% 100%;
     z-index: 33;
+    top: 411px;
   }
 }
 @media (min-width: 768px) { 
   .questions {
-    height: 402px;
     &__wrapper {
       height: 402px;
     }
@@ -74,17 +74,16 @@
     }
 
     &:after {
-      height: 100px;
-      top: -20px;
+      height: 80px;
+      top: 402px;
     }
   }
 }
 
 @media (min-width: 1200px) { 
   .questions {
-    height: 306px;
     &__wrapper {
-      height: 367px;
+      height: 306px;
     }
 
     &__title {
@@ -95,8 +94,8 @@
     }
 
     &:after {
-      top: -101px;
-      height: 140px;
+      height: 130px;
+      top: 300px;
     }
   }
 }

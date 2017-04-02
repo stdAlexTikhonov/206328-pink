@@ -7,11 +7,30 @@
   margin: 0 auto;
   cursor: pointer;
 
+
   &--download {
     border: 3px solid white;
     padding-top: 11px;
     padding-bottom: 14px;
     margin: 28px 20px 40px;
+  }
+
+  &--add {
+    color: #d22856;
+    width: 230px;
+    height: 50px;
+    background: none;
+    border: 2px solid #d22856;
+    margin-bottom: 5px;
+  }
+
+  &--cancel {
+    color: #dddfe0;
+    width: 230px;
+    height: 50px;
+    background: none;
+    border: 2px solid #dddfe0;
+    margin-top: 5px;
   }
   @media (min-width: 1200px) {
     font-size: 21px;

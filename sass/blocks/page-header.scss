@@ -56,6 +56,9 @@
     &--index {
       display: none;
     }
+    &--photo {
+      
+    }
 
   }
 
@@ -66,11 +69,6 @@
     background: url(../img/iphone-hand-mobile@1x.png) no-repeat 0 100%;
   }
 
-  &__container {
-
-    height: 171px;
-    background-color: rgba(255,0,0,0.5);
-  }
 
   &__actions {
     position: absolute;
@@ -130,9 +128,9 @@
     }
     &__banner {
       height: 619px;
-      background: none;
-     /* background-size: 70%;
-      background-position: 100% 100%; */
+      /*background: none;*/
+      background-size: 70%;
+      background-position: 100% 100%; 
     }
     &__container {
       height: 330px;

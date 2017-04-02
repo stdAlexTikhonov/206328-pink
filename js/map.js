@@ -1,4 +1,4 @@
-var chicago = new google.maps.LatLng(55.771297,37.6223995);
+var chicago = new google.maps.LatLng(59.9386651,30.3205833);
 function initialize() {
 
     var roadAtlasStyles = [
@@ -95,7 +95,7 @@ function initialize() {
 
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
-    var marker1 = new google.maps.LatLng(55.771297,37.6223995);
+    var marker1 = new google.maps.LatLng(59.9386651,30.3205833);
     var image = 'img/map-marker.png';
     var beachMarker = new google.maps.Marker({
         position: marker1,
