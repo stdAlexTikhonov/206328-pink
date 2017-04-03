@@ -22,10 +22,14 @@
       width: 25%;
     }
 
+    tr:first-child {
+      background: #283645;
+    }
+
     th {
       color: white;
-      padding: 10px;
-      background: #283645;
+      padding: 15px 30px;
+      text-transform: uppercase;
       &:first-child {
         visibility: hidden; 
         display: none;
@@ -36,16 +40,50 @@
       display: none;
     }
   }
+
+  &__hit {
+    background: #283645 url(../img/bg-hit-tablet.svg) no-repeat 0 0;
+    position: relative;
+    &:before {
+      content: "ХИТ";
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__yes {
+    background: url(../img/icon-yes-green.svg) no-repeat 90%;
+  }
+
+  &__no {
+    background: url(../img/icon-no-red.svg) no-repeat 90%;
+    background-size: 20px;
+  }
+
+  &__title {
+    font-family: "OpenSansBold";
+  }
+
+  &__text {
+    text-align: left;
+    line-height: 30px;
+  }
+
 }
 
 @media (min-width: 768px) { 
   .advantages {
+
     &__table {
       width: 620px;
       left: 0 !important;
       td:first-child {
         display: table-cell;
         width: 27%;
+        text-align: left;
       }
       th:first-child {
         display: table-cell;
@@ -56,12 +94,23 @@
     .slider__controls {
       display: none;
     }
+
+    &__yes, &__no {
+      background-position: 50%;
+    }
+
+    &__text {
+      display: none;
+    }
   }
 
 }
 
 @media (min-width: 1200px) { 
   .advantages {
+    &__wrapper {
+      padding-top: 200px;
+    }
     &__table {
       width: 940px;
     }
