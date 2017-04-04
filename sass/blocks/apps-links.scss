@@ -14,6 +14,7 @@
     }
     &--android {
       background-image: url(../img/logo-android.svg);
+      margin: 0 17px;
     }
     &--windows {
       background-image: url(../img/logo-microsoft.svg);
@@ -25,4 +26,23 @@
       height: 50px;
     }
   }
+
+  @media (min-width: 768px) {
+    margin: 50px 0 35px;
+    &__link {
+      &--android {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin: 73px 0 52px;
+    &__link {
+      &--android {
+        opacity: 1;
+      }
+    }
+  }
+
 }

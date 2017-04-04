@@ -10,11 +10,11 @@
     }
   }
   &__items {
+
     margin: 0;
     padding: 0;
     list-style: none;
     border-top: 1px solid black;
-
     &:before {
       content: "";
 
@@ -40,7 +40,13 @@
       font-size: 17.8px;
       text-transform: uppercase;
       text-decoration: none;
-      padding: 19px;
+      padding: 18px 0;
+      letter-spacing: 0.5px;
+
+      .html {
+        text-transform: uppercase;
+        
+      }
     }
   }
 
@@ -96,8 +102,10 @@
       display: none;
     }
     &__item {
+      margin-right: 76.5px;
+      &:last-of-type { margin: 0;}
+      
       display: inline-block;
-      margin-left: 30px;
       a {
         font-family: "OpenSansLight";
         border: none;
@@ -109,8 +117,10 @@
       display: none;
     }
     &__items {
+      width: 639px;
       position: absolute;
-      top: -90px;
+      top: -86px;
+      right: -139px;
       z-index: 35;
       border: none;
 

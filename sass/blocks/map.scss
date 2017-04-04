@@ -1,23 +1,20 @@
 .map {
+   height: 300px;
   &__wrapper {
     @include container();
-    background-color: rgba(0,0,255,0.5);
-    height: 202px;
+    //background-color: rgba(0,0,255,0.5);
+
   }
 }
 
 @media (min-width: 768px) { 
   .map {
-    &__wrapper {
       height: 378px;
-    }
   }
 }
 
 @media (min-width: 1200px) { 
   .map {
-    &__wrapper {
       height: 502px;
-    }
   }
 }

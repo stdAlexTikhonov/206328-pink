@@ -8,7 +8,7 @@
   </head>
   <body class="page page__form">
     <header class="page-header">
-     <div class="page-header__logo page-header__logo--mobile">
+      <div class="page-header__logo page-header__logo--mobile">
         <div class="page-header__wrapper">
           <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"/>
         </div>
@@ -29,17 +29,15 @@
         <button class="main-menu__toggle"></button>
 
           <ul class="main-menu__items">
-            <li class="main-menu__item"><a href="#">Главная</a></li>
-            <li class="main-menu__item"><a href="#">Фотографии</a></li>
-            <li class="main-menu__item"><a href="#">Конкурс</a></li>
-            <li class="main-menu__item"><a href="#">html academy</a></li>
+            <li class="main-menu__item"><a href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-menu__item"><a href="#"><span class="html">html</span> academy</a></li>
           </ul>
 
       </nav>
       <div class="page-header__wrapper">
-       
-
-        <h2 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
+       <h2 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
     </header>
     <main class="main">
@@ -50,68 +48,71 @@
         <div class="form__wrapper">
           <fieldset class="form__item form__item--item-1 nameinfo">
             <div class="nameinfo__wrapper">
-              <label class="nameinfo__item">
-                фамилия:
+              <div class="nameinfo__item">
+                <label>фамилия:</label>
                 <input type="text" value="Укажите фамилию *" name="lastname">
-              </label>
-              <label class="nameinfo__item">
-                имя:
+              </div>
+              <div class="nameinfo__item">
+                <label>имя:</label>
                 <input type="text" value="Введите ваше имя *" name="firstname">
-              </label>
-              <label class="nameinfo__item">
-                отчество:
+              </div>
+              <div class="nameinfo__item">
+                <label>отчество:</label>
                 <input type="text" value="Ну и отчество тоже *" name="secondname">
-              </label>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="form__item form__item--item-2 checklist">
+            <legend class="checklist__title">Ваши безбашенные достижения в путешествии</legend>
             <div class="checklist__wrapper">
-              <p class="checklist__title">Ваши безбашенные достижения в путешествии</p>
-              <label class="checklist__item"><input type="checkbox" name="check1" checked>Сделал селфи с акулой</label>
-              <label class="checklist__item"><input type="checkbox" name="check2" checked>Обгорел на пляже</label>
-              <label class="checklist__item"><input type="checkbox" name="check3">Видел Чака Норриса</label>
-              <label class="checklist__item"><input type="checkbox" name="check4">Накупил сувениров</label>
-              <label class="checklist__item"><input type="checkbox" name="check5" checked>Удержал башню</label>
-              <label class="checklist__item"><input type="checkbox" name="check6">Разгромил отель</label>
+              <label class="checklist__item"><input type="checkbox" name="check1" checked><span class="checklist__item-text">Сделал селфи с акулой</span></label>
+              <label class="checklist__item"><input type="checkbox" name="check2" checked><span class="checklist__item-text">Обгорел на пляже</span></label>
+              <label class="checklist__item"><input type="checkbox" name="check3"><span class="checklist__item-text">Видел Чака Норриса</span></label>
+              <label class="checklist__item"><input type="checkbox" name="check4"><span class="checklist__item-text">Накупил сувениров</span></label>
+              <label class="checklist__item"><input type="checkbox" name="check5" checked><span class="checklist__item-text">Удержал башню</span></label>
+              <label class="checklist__item"><input type="checkbox" name="check6"><span class="checklist__item-text">Разгромил отель</span></label>
             </div>
           </fieldset>
 
           <fieldset class="form__item form__item--item-3 user-contacts">
+            <legend class="user-contacts__title">Контактная информация</legend>
             <div class="user-contacts__wrapper">
-              <label class="user-contacts__item">
-                номер телефона
+              <div class="user-contacts__item">
+                <label class="user-contacts__item-label">номер телефона</label>
                 <input type="tel" name="phone-number"  placeholder="Номер, пожалуйста">
-              </label>
+              </div>
 
-              <label class="user-contacts__item">
-                адрес почты
+              <div class="user-contacts__item">
+                <label class="user-contacts__item-label">адрес почты</label>
                 <input type="email" name="email" placeholder="Введите почту *">
-              </label>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="form__item form__item--item-4 apps">
+            <legend class="apps__title">С каким приложением путешествовали?</legend>
             <div class="apps__wrapper">
-              <p class="apps__title">C каким приложением путешествовали</p>
-              <label class="apps__item"><input type="radio" name="app" value="ios" checked>Pink для IOS</label>
-              <label class="apps__item"><input type="radio" name="app" value="ios">Pink для Android</label>
-              <label class="apps__item"><input type="radio" name="app" value="ios">Windows Phone</label>
+              <label class="apps__item"><input type="radio" name="app" value="ios" checked><span class="apps__item-text">Pink для IOS</span></label>
+              <label class="apps__item"><input type="radio" name="app" value="ios"><span class="apps__item-text">Pink для Android</span></label>
+              <label class="apps__item"><input type="radio" name="app" value="ios"><span class="apps__item-text">Windows Phone</span></label>
             </div>
           </fieldset>
-          <fieldset class="form__item form__item--item-5 emotions">
+          <div class="emotions form__item form__item--item-5">
             <div class="emotions__wrapper">
-            <label class="emotions__comment">
-              опишите свои эмоции
-              <textarea name="comment" id="comment-field" rows=10>Можно прям в красках, не стесняясь в выражениях</textarea>
-            </label>
-            </div>
-          </fieldset>
+              <fieldset>
+                <legend class="emotions__title">опишите свои эмоции</legend>
           
+                <textarea name="emotions__comment" id="comment-field" rows=10>Можно прям в красках, не стесняясь в выражениях</textarea>
+          
+                
+              </fieldset>
+            </div>
+          </div>
           <div class="form__item form__item--item-6 send-form">
             <div class="send-form__wrapper">
-              <input type="submit" value="Отправить форму">
-              <p>- обязательные поля</p>
+              <input class="send-form__btn" type="submit" value="Отправить форму">
+              <div class="send-form__text"><span class="send-form__star">*</span>- обязательные<span class="send-form__dop"> для заполнения </span>поля</div>
             </div>
           </div>
         </div>
@@ -123,9 +124,9 @@
           <img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink"/>
         </div>
         <ul class="page-footer__socials socials">
-          <li class="socials__item"><a class="socials__link--tw" href="#"></a></li>
-          <li class="socials__item"><a class="socials__link--fb" href="#"></a></li>
-          <li class="socials__item"><a class="socials__link--yt" href="#"></a></li>
+          <li class="socials__item"><a class="socials__link socials__link--tw" href="#"></a></li>
+          <li class="socials__item"><a class="socials__link socials__link--fb" href="#"></a></li>
+          <li class="socials__item"><a class="socials__link socials__link--yt" href="#"></a></li>
         </ul>
         <p class="page-footer__copyright">
           Разработано:

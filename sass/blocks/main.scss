@@ -1,11 +1,16 @@
 
 .main {
+  background-color: white;
   &__top {
     @include container();
     height: 160px;
-    background-color: rgba(0,255,0,0.5);
+    display: flex;
     p {
-    	margin: 0;
+    	display: block;
+      text-align: center;
+      margin: auto;
+      font-size: 14px;
+      width: 90%;
     }
   }
 }
@@ -14,6 +19,9 @@
 	.main {
 		&__top {
 			height: 210px;
+      p {
+        font-size: 18px;
+      }
 		}
 	}
 }
